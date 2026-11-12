@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp 
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:type="TaskPaneApp">
+  <Id>b7c2a1e3-4f91-4d32-9c88-7521a0f9b3e1</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Cabinet Avocats</ProviderName>
+  <DefaultLocale>fr-FR</DefaultLocale>
+  <DisplayName DefaultValue="Gestionnaire de Pieces" />
+  <Description DefaultValue="Automatisation de la numerotation en cascade des pieces et bordereau recapitulatif." />
+  <IconUrl DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat/assets/icon-80.png" />
+  <SupportUrl DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat" />
+  <AppDomains>
+    <AppDomain>https://mehdricrazy-oss.github.io</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Document" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat/src/taskpane/taskpane.html" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+</OfficeApp>

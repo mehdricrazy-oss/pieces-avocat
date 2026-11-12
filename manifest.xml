@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp 
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" 
+  xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides"
+  xsi:type="TaskPaneApp">
+
+  <Id>b7c2a1e3-4f91-4d32-9c88-7521a0f9b3e1</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Cabinet Avocats</ProviderName>
+  <DefaultLocale>fr-FR</DefaultLocale>
+  <DisplayName DefaultValue="Gestionnaire de Pieces" />
+  <Description DefaultValue="Gestion et decalage dynamique des pieces justificatives et bordereau recapitulatif." />
+  <IconUrl DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat/assets/icon-80.png" />
+  <SupportUrl DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat" />
+  <AppDomains>
+    <AppDomain>https://mehdricrazy-oss.github.io</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Document" />
+  </Hosts>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat/src/taskpane/taskpane.html" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Document">
+        <DesktopFormFactor>
+          <GetStarted>
+            <Title resid="GetStarted.Title"/>
+            <Description resid="GetStarted.Description"/>
+            <LearnMoreUrl resid="GetStarted.LearnMoreUrl"/>
+          </GetStarted>
+          <FunctionFile resid="TaskpaneUrl" />
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <OfficeTab id="TabHome">
+              <Group id="PiecesGroup">
+                <Label resid="GroupLabel" />
+                <Icon>
+                  <bt:Image size="16" resid="Icon16" />
+                  <bt:Image size="32" resid="Icon32" />
+                  <bt:Image size="80" resid="Icon80" />
+                </Icon>
+                <Control xsi:type="Button" id="ShowTaskpaneButton">
+                  <Label resid="ButtonLabel" />
+                  <Supertip>
+                    <Title resid="ButtonTitle" />
+                    <Description resid="ButtonDescription" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon16" />
+                    <bt:Image size="32" resid="Icon32" />
+                    <bt:Image size="80" resid="Icon80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>LegalPiecesTaskpane</TaskpaneId>
+                    <SourceLocation resid="TaskpaneUrl" />
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon16" DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat/assets/icon-16.png" />
+        <bt:Image id="Icon32" DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat/assets/icon-32.png" />
+        <bt:Image id="Icon80" DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat/assets/icon-80.png" />
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="TaskpaneUrl" DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat/src/taskpane/taskpane.html" />
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://mehdricrazy-oss.github.io/pieces-avocat" />
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="GetStarted.Title" DefaultValue="Pieces Juridiques" />
+        <bt:String id="GroupLabel" DefaultValue="Pieces Juridiques" />
+        <bt:String id="ButtonLabel" DefaultValue="Gerer les Pieces" />
+        <bt:String id="ButtonTitle" DefaultValue="Bordereau et Pieces" />
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="GetStarted.Description" DefaultValue="Gestion et decalage automatique des pieces juridiques." />
+        <bt:String id="ButtonDescription" DefaultValue="Ouvre le volet de gestion et decalage dynamique des pieces justificatives." />
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>

@@ -1,0 +1,24 @@
+{
+  "name": "legal-pieces-word-addin",
+  "version": "1.0.0",
+  "description": "Add-in Word pour la gestion et le décalage dynamique des pièces justificatives et bordereau",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-strip-types --test src/core/piecesManager.test.ts && node test-simulation.js",
+    "build": "node build.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "word",
+    "office-addin",
+    "legal",
+    "avocat",
+    "pieces",
+    "bordereau"
+  ],
+  "author": "Cabinet d'Avocats",
+  "license": "MIT",
+  "dependencies": {
+    "selfsigned": "^5.5.0"
+  }
+}
