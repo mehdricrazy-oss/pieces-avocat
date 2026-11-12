@@ -90,9 +90,9 @@
                     <h3>Importer une liste existante</h3>
                     <p class="field-hint">Collez ici votre liste de pièces existante (ex: la page 17 de vos conclusions). L'Add-in détectera automatiquement chaque numéro et intitulé !</p>
                     <textarea id="import-raw-text" rows="6" placeholder="Exemple :
-Pièce n°1 : Décisions de l'associé unique en date du 17 mars 22
-Pièce n°2 : Procès-verbal de l'assemblée générale mixte...
-Pièce n°3 : Extrait Kbis de la société Ready4digital"></textarea>
+Pièce n°1 : Contrat cadre de prestation de services
+Pièce n°2 : Procès-verbal de réception des livrables
+Pièce n°3 : Extrait Kbis de la société demanderesse"></textarea>
                     <button id="btn-run-import" class="btn btn-primary">
                         <span>⚡</span> Importer toutes les pièces
                     </button>
@@ -121,28 +121,28 @@ Pièce n°3 : Extrait Kbis de la société Ready4digital"></textarea>
         <!-- Panneau de simulation (affiché hors de Word pour tester en direct sur navigateur) -->
         <main id="demo-doc-container" class="demo-doc-container">
             <div class="doc-toolbar">
-                <div class="doc-toolbar-title">📄 Exemple Réel : Conclusions en Réponse (Tribunal des Activités Économiques de Paris)</div>
+                <div class="doc-toolbar-title">📄 Exemple de Démonstration : Conclusions Juridiques</div>
                 <div class="doc-toolbar-hint">Cliquez dans le texte pour positionner votre curseur, puis cliquez sur "Insérer" dans le volet.</div>
             </div>
             <div class="word-page">
                 <div class="legal-header">
                     <p>Audience de Mise en État<br>
-                    <strong>À Messieurs les Président et Juges<br>Composant le Tribunal des Activités Économiques de PARIS</strong></p>
+                    <strong>À Messieurs les Président et Juges<br>Composant le Tribunal Judiciaire</strong></p>
                     <div class="conclusions-box">
                         <h2>CONCLUSIONS EN RÉPONSE</h2>
                     </div>
                 </div>
 
                 <div id="editable-doc-body" class="doc-body" contenteditable="true" spellcheck="false">
-                    <p><strong>POUR :</strong> Monsieur Eric AUPETIT...</p>
-                    <p><strong>CONTRE :</strong> Monsieur Philippe WEPPE et la société ISSHO...</p>
+                    <p><strong>POUR :</strong> La société ALFA CONSEIL SAS, demanderesse.</p>
+                    <p><strong>CONTRE :</strong> La société BETA DEVELOPPEMENT SARL, défenderesse.</p>
                     <hr>
                     <h3 style="text-align: center;">PLAISE AU TRIBUNAL</h3>
                     <h3>I - RAPPEL DES FAITS</h3>
-                    <p>Monsieur Eric AUPETIT a été dirigeant de la société READY4DIGITAL à compter du 17 mars 2022 jusqu'à l'assemblée générale en date du 26 juin 2024 qui a pourvu à son remplacement, consécutivement à sa démission. <span class="word-cc" data-piece-ids="p1,p2" contenteditable="false">(Pièces n° 1 et 2)</span></p>
-                    <p>La société READY4DIGITAL, anciennement dénommée F&P MANAGEMENT SERVICES, est une société par actions simplifiée... <span class="word-cc" data-piece-ids="p3,p4" contenteditable="false">(Pièces n° 3 et 4)</span></p>
-                    <p>Cette société a été créée en juin 2017. <span class="word-cc" data-piece-ids="p3" contenteditable="false">(Pièce n° 3)</span></p>
-                    <p>Puis, un protocole de cession a été conclu le 17 mars 2022, aux termes duquel <span class="word-cc" data-piece-ids="p5" contenteditable="false">(Pièce n° 5)</span> : Monsieur WEPPE a cédé 80% de ses actions.</p>
+                    <p>Attendu que les parties se sont rapprochées afin de formaliser un accord commercial cadre régissant leurs prestations respectives. <span class="word-cc" data-piece-ids="p1,p2" contenteditable="false">(Pièces n° 1 et 2)</span></p>
+                    <p>Que la société concluante a régulièrement exécuté l'ensemble des livrables prévus au contrat de services. <span class="word-cc" data-piece-ids="p3,p4" contenteditable="false">(Pièces n° 3 et 4)</span></p>
+                    <p>Que cette convention prévoyait expressément une clause de prorogation automatique. <span class="word-cc" data-piece-ids="p3" contenteditable="false">(Pièce n° 3)</span></p>
+                    <p>Puis, un avenant modificatif fixant le calendrier d'exécution a été formalisé entre les parties <span class="word-cc" data-piece-ids="p5" contenteditable="false">(Pièce n° 5)</span> : la défenderesse s'engageant à solder les factures intermédiaires.</p>
                     <p>Positionnez votre curseur ici dans le paragraphe pour insérer un nouveau renvoi dynamique...</p>
                 </div>
 

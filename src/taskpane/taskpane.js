@@ -87,18 +87,18 @@ function setupBrowserDemo() {
     statusBadge.textContent = '🟡 Mode Navigateur';
     statusBadge.className = 'badge badge-warning';
 
-    // Pièces extraites de votre exemple réel (Monsieur Eric AUPETIT / READY4DIGITAL)
+    // Pièces d'exemple génériques anonymisées
     piecesRegistry = [
-        { id: 'p1', number: 1, title: "Décisions de l'associé unique en date du 17 mars 22" },
-        { id: 'p2', number: 2, title: "Procès-verbal de l'assemblée générale mixte en date du 26 juin 2024" },
-        { id: 'p3', number: 3, title: "Extrait Kbis de la société Ready4digital" },
-        { id: 'p4', number: 4, title: "Statuts de la société Ready4digital" },
-        { id: 'p5', number: 5, title: "Protocole de cession de bloc de contrôle de la société F&P MANAGEMENT SERVICES" },
-        { id: 'p6', number: 6, title: "Contrat de travail de Monsieur WEPPE" },
-        { id: 'p7', number: 7, title: "Comptes annuels 2022 de Ready4digital" },
-        { id: 'p8', number: 8, title: "Comptes annuels 2023 de Ready4digital" },
-        { id: 'p9', number: 9, title: "Courrier RAR de Monsieur WEPPE en date du 7 mars 2024" },
-        { id: 'p10', number: 10, title: "Courrier RAR de Monsieur WEPPE en date du 25 mars 2024" }
+        { id: 'p1', number: 1, title: "Contrat cadre de prestation de services" },
+        { id: 'p2', number: 2, title: "Procès-verbal de réception des livrables" },
+        { id: 'p3', number: 3, title: "Extrait Kbis de la société demanderesse" },
+        { id: 'p4', number: 4, title: "Statuts constitutifs de la société" },
+        { id: 'p5', number: 5, title: "Avenant modificatif au contrat commercial" },
+        { id: 'p6', number: 6, title: "Contrat de collaboration technique" },
+        { id: 'p7', number: 7, title: "Rapport d'audit et bilan d'exercice N-1" },
+        { id: 'p8', number: 8, title: "Bilan financier et compte de résultat" },
+        { id: 'p9', number: 9, title: "Courrier de relance par lettre recommandée avec AR" },
+        { id: 'p10', number: 10, title: "Mise en demeure restée infructueuse" }
     ];
 
     renderPiecesList();

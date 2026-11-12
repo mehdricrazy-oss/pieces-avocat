@@ -30,22 +30,22 @@ describe('PiecesManager - Tests Avocat Conclusions Réelles', () => {
         assert.equal(formatMultipleReferences([p1, p2, p3]), '(Pièces n° 1, 2 et 3)');
     });
 
-    it('devrait parser une liste brute de bordereau comme dans les vraies conclusions (page 17)', () => {
+    it('devrait parser une liste brute de bordereau comme dans les vraies conclusions', () => {
         const rawText = `
-Pièce n°1 : Décisions de l'associé unique en date du 17 mars 22
-Pièce n°2 : Procès-verbal de l'assemblée générale mixte en date du 26 juin 2024
-Pièce n°3 : Extrait Kbis de la société Ready4digital
-Pièce n°4 : Statuts de la société Reandy4digital
-Pièce n°29 : Courriel de Madame Magali SCHEIRS en date du 18 mars 2024
+Pièce n°1 : Contrat cadre de prestation de services
+Pièce n°2 : Procès-verbal de réception des livrables
+Pièce n°3 : Extrait Kbis de la société demanderesse
+Pièce n°4 : Statuts constitutifs de la société
+Pièce n°29 : Courriel de confirmation de clôture
         `;
 
         const parsed = parseBordereauText(rawText);
         assert.equal(parsed.length, 5);
         assert.equal(parsed[0].number, 1);
-        assert.equal(parsed[0].title, "Décisions de l'associé unique en date du 17 mars 22");
+        assert.equal(parsed[0].title, "Contrat cadre de prestation de services");
         assert.equal(parsed[1].number, 2);
         assert.equal(parsed[4].number, 29);
-        assert.equal(parsed[4].title, "Courriel de Madame Magali SCHEIRS en date du 18 mars 2024");
+        assert.equal(parsed[4].title, "Courriel de confirmation de clôture");
     });
 
     it('devrait insérer en cascade au milieu et décaler sans date requise', () => {
